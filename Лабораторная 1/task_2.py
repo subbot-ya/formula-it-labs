@@ -7,5 +7,5 @@ memory_mb = 1.44
 memory_bytes = memory_mb * 1024 * 1024
 memory_book_bytes = bytes_for_one_symbol * symbols_one_string * strings_one_page * pages_book
 
-number_books = round(memory_bytes / memory_book_bytes)
+number_books = int(memory_bytes // memory_book_bytes)
 print("Количество книг, помещающихся на дискету:", number_books)
